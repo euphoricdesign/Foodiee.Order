@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodiee.Order</title>
+    <link rel="icon" type="image/png" href="" sizes="16x16">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+        <div class="container">
+            <nav class="nav d-flex">
+                <a href="#" class="logo">
+                    <img src="assets/images/logo.svg" alt="">
+                </a>
+                <!-- toggle bar -->
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div> 
+
+                <div class="navigation-bar">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#getapp">Get app</a></li>
+                        <li><a href="#booknow" class="btn book-btn">Book now</a></li>
+                    </ul>
+                </div>
+            </nav> 
+        </div>
+    </header>
+    
+    <main>
+
+        <!-- home -->
+        <section class="home" id="home">
+            <div class="container">
+                <div class="home-wrapper d-grid">
+                    <div class="col-left">
+                        <h3>Restaurante</h3>
+                        <h1>Enjoy our <br> majestic meals</h1>
+                        <p>Vestibulum sed augue ac lorem rutrum congue. Donec cursus mollis sapien, non vulputate odio congue id. Sed mattis, tortor nec facilisis laoreet, mauris magna finibus nisl, eu pulvinar erat libero in turpis.</p>
+                        <div class="search-food d-flex">
+                            <input type="text" placeholder="Search food...">
+                            <a href="#" class="btn"> search</a>
+                        </div>
+
+                        <div class="social-icons d-flex">
+                            <a href="#">
+                                <img src="assets/images/facebook.svg" alt="facebook">
+                            </a>
+
+                            <a href="#">
+                                <img src="assets/images/twitter.svg" alt="twitter">
+                            </a>
+
+                            <a href="#">
+                                <img src="assets/images/instagram.svg" alt="instagram">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-right">
+                        <img src="assets/images/hero-img.png" alt="hero-img" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu" id="menu">
+            <div class="container">
+                <div class="section-title">
+                    <h3>Menu</h3>
+                    <h2>Popular dishes</h2>
+                    <p>Sed tincidunt sapien in augue aliquet ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit tortor nunc, in consectetur justo pharetra vel.</p>
+                </div>
+                <div class="menu-items d-grid">
+
+                </div>
+                <!-- item -->
+                    <div class="item">
+                        <img src="assets/images/pizza.png" alt="pizza" class="img-fluid">
+                        <h4>Pizza</h4>
+                        <p>Eat luctus est vestibulum vel. Integer pulvinar <br> nibh quis diam ullamcorper,</p>
+
+                        <div class="action d-flex">
+                            <span class="price">
+                                $ &nbsp; 10.22
+                            </span>
+
+                            <a href="#" class="cart-btn">
+                                Add to cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/gumshoe/dist/gumshoe.polyfills.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+    $('.js-tilt').tilt({
+    scale: 1.2
+    })
+</script>
+
+</html>
