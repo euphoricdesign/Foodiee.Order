@@ -11,10 +11,10 @@ $(document).ready(function(){
 		var navHeight = $('header').height();
 		if ($(window).scrollTop() > navHeight) {
 			$('header').addClass('fixed');
-		 }
+		}
 		else {
 			$('header').removeClass('fixed');
-		 }
+		}
 	});
 });
 // Scroll to TOP
@@ -30,13 +30,13 @@ btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '500');
 });
-    // Reveal animation
-    const sr = ScrollReveal({
-        origin: 'top',
-        distance: '20px',
-        duration: 1500,
-        reset: true
-    });
-    ScrollReveal().reveal('.col-left, .content-col, .img-col', { origin: 'left' });
-    ScrollReveal().reveal('.col-right, .content-col-image, .getapp-content', { origin: 'right' });
-    ScrollReveal().reveal('.item, .footer-about, .footer-col', { interval: 100 });
+// Reveal animation
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '20px',
+    duration: 1500,
+    reset: true
+});
+sr.reveal('.col-left, .content-col, .img-col', { origin: 'left' });
+sr.reveal('.col-right, .content-col-image, .getapp-content', { origin: 'right' });
+sr.reveal('.item, .footer-about, .footer-col', { interval: 100 });

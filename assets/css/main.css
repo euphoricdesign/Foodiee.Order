@@ -170,15 +170,6 @@ nav {
     text-transform: capitalize;
     transition: var(--animate);
 }
-
-.navigation-bar ul li a.btn {
-    color: var(--color-white);
-}
-
-.navigation-bar ul li a.btn:hover {
-    color: var(--color-white);
-}
-
 .navigation-bar ul li a:hover,
 .navigation-bar ul li.active a {
     color: var(--color-first);
@@ -188,13 +179,18 @@ nav {
     content: "";
     position: absolute;
     top: auto;
+    bottom: -5px;
     left: 0;
     right: 0;
     margin: auto;
-    display: block;
     width: 5px;
-    border-radius: 50%;
+    height: 5px;
+    border-radius: 50px;
     background-color: var(--color-first);
+}
+
+.navigation-bar ul li a.btn {
+    color: var(--color-white);
 }
 
 /* toggle bar */
@@ -635,6 +631,84 @@ nav {
         .menu-items {
             margin-top: 50px;
             gap: 30px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        .container {
+            width: 90%;
+            padding: 0 20px;
+        }
+
+        .ptb-80 {
+            padding: 80px 0;
+        }
+
+        .home {
+            padding: 50px 0;
+        }
+
+        .home-wrapper {
+            min-height: auto;
+        }
+
+        .home-wrapper .col-left p,
+        .search-food {
+            width: 300px;
+        }
+
+        .services .content-col {
+            padding-left: 25px;
+        }
+
+        .social-icons {
+            margin-top: 50px;
+        }
+
+        .getapp-wrapper {
+            padding: 40px 30px;
+            align-items: flex-start;
+        }
+
+        .getapp-content a {
+            width: 115px;
+            margin: 25px 15px 0 0;
+        }
+
+        .footer-wrapper {
+            padding: 65px 0;
+        }
+
+        .footer-about {
+            flex: 0 0 100%;
+            margin-bottom: 40px;
+        }
+
+        .footer-wrapper .footer-col {
+            flex: 0 0 250px;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media (min-width: 1024px) and (max-width: 1230px) {
+        .container {
+            width: 90%;
+        }
+        .services .content-col {
+            padding-left: 25px;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        :root {
+            --text-large: 35px;
+            --text-medium: 18px;
+        }
+
+        h1,
+        h2 {
+            line-height: 50px;
+            margin-bottom: 20px;
         }
     }
 
